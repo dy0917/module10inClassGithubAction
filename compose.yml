@@ -1,7 +1,7 @@
 version: "3"
 services:
   module10inclass:
-    build: ./
+    image: dy0917/dockergitactioninclass
     ports:
       - "8080:8080"
 
