@@ -7,13 +7,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: 
+      name: develop
     strategy:
       matrix:
         node-version: [18.x]
 
     steps:
     - name: Check env
-      run: echo "${{ vars.env }} "
+      run: echo "${{ vars.ENV }} "
 
     - name: Checkout repository
       uses: actions/checkout@v2
