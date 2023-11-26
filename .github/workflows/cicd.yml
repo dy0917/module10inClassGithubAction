@@ -12,6 +12,9 @@ jobs:
         node-version: [18.x]
 
     steps:
+    - name: Check env
+      run: echo "${{ env.env }} "
+
     - name: Checkout repository
       uses: actions/checkout@v2
 
