@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Check env
-      run: echo "${{ vars.ENV }} "
+      run: echo "${{ vars.ENV}} "
 
     - name: Checkout repository
       uses: actions/checkout@v2
